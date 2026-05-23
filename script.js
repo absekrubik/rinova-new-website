@@ -191,3 +191,26 @@ if (
   });
 
 }
+/* =========================
+   MOBILE DROPDOWN FIX
+========================= */
+
+const dropdownLinks = document.querySelectorAll(".dropdown > a");
+
+dropdownLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    if (window.innerWidth <= 1024) {
+      e.preventDefault();
+
+      const dropdown = this.parentElement;
+
+      document.querySelectorAll(".dropdown").forEach((item) => {
+        if (item !== dropdown) {
+          item.classList.remove("active");
+        }
+      });
+
+      dropdown.classList.toggle("active");
+    }
+  });
+});
