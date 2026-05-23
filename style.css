@@ -136,6 +136,28 @@ img { max-width: 100%; display: block; }
 .dropdown-menu a:hover {
   background: rgba(0, 74, 173, 0.08);
 }
+@media (max-width: 1024px) {
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 14px;
+    margin-top: 10px;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    background: #f2f7ff;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+}
 
 
 /* =========================================================
