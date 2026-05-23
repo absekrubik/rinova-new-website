@@ -191,9 +191,6 @@ if (
   });
 
 }
-/* =========================
-   MOBILE DROPDOWN FIX
-========================= */
 
 const dropdownLinks = document.querySelectorAll(".dropdown > a");
 
