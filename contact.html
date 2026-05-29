@@ -1,227 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Rinova International Educational Institute</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!-- Favicon for browser tab -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <!-- Optional: for better visibility in search engines and bookmarks -->
-    <link rel="apple-touch-icon" href="images/favicon.png">
-    <meta name="msapplication-TileImage" content="favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Contact Us | Rinova Education</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
+
 <body>
-       <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <div class="logo-container">
-                <a href="index.html" class="logo-link" title="Rinova Institute Home">
-                        <img src="images/logo.png" alt="Rinova Institute Logo" class="logo-img">
-                    </a>
-            </div>
-            <nav class="nav" id="nav">
-                <div class="nav-item">
-                    <a href="aboutus.html" class="nav-link">About Us</a>
-                </div>
-                <div class="nav-item dropdown-parent">
-                    <a href="#programs" class="nav-link">Programs <span class="dropdown-arrow">▾</span></a>
-                    <div class="dropdown">
-                        <a href="abroad-study.html" class="dropdown-link">Abroad Study</a>
-                        <a href="ielts-pte.html" class="dropdown-link">IELTS & PTE</a>
-                        <a href="exam-preparation.html" class="dropdown-link">Exam Preparation</a>
-                        <a href="language-classes.html" class="dropdown-link">Language Classes</a>
-                        <a href="computer-classes.html" class="dropdown-link">Computer Classes</a>
-                        <a href="tuition-classes.html" class="dropdown-link">Tuition Classes</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown-parent">
-                    <a href="#study-destinations" class="nav-link">Study Abroad <span class="dropdown-arrow">▾</span></a>
-                    <div class="dropdown">
-                        <a href="studyinuk.html" class="dropdown-link">Study In UK</a>
-                        <a href="studyinaustralia.html" class="dropdown-link">Study In Australia</a>
-                        <a href="studyinus.html" class="dropdown-link">Study In US</a>
-                        <a href="studyincanada.html" class="dropdown-link">Study In Canada</a>
-                        <a href="studyinnewzealand.html" class="dropdown-link">Study In New Zealand</a>
-                        <a href="studyinindia.html" class="dropdown-link">Study In India</a>
-                        <a href="studyinjapan.html" class="dropdown-link">Study In Japan</a>
-                        <a href="studyinkorea.html" class="dropdown-link">Study In Korea</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="blog.html" class="nav-link">Blogs</a>
-                </div>
-                <div class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </div>
-                <div class="nav-item">
-                    <a href="enquiry.html" class="btn primary-btn nav-cta">Enquiry Now</a>
-                </div>
-            </nav>
 
-            <buttonbutton class="mobile-menu-toggle" id="mobile-toggle" aria-label="Open mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
+<header class="header">
+  <div class="container nav-container">
 
-        <!-- Page Header -->
-<section class="hero-content">
-        <div class="container">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="gradient-text">Contact</span><br/>
-                    <span class="highlight">Us. </span>
-                    
-                </h1>
-                <p class="hero-description">
-                    Get in Touch with Our Expert Team</p>
-            </div>
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Rinova Education Logo">
+    </a>
+
+    <nav class="navbar">
+      <ul class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle">About <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="who-we-are.html">Who We Are</a></li>
+            <li><a href="mission-vision.html">Mission & Vision</a></li>
+            <li><a href="index.html#why">Why Choose Us</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle">Study Abroad <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="study-australia.html">Study in Australia</a></li>
+            <li><a href="study-usa.html">Study in USA</a></li>
+            <li><a href="study-uk.html">Study in UK</a></li>
+            <li><a href="study-canada.html">Study in Canada</a></li>
+            <li><a href="study-japan.html">Study in Japan</a></li>
+            <li><a href="study-korea.html">Study in Korea</a></li>
+            <li><a href="study-india.html">Study in India</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle">Test Preparation <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="ielts.html">IELTS Preparation</a></li>
+            <li><a href="pte.html">PTE Preparation</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle">Courses <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="computer-class.html">Computer Classes</a></li>
+            <li><a href="python.html">Python Programming</a></li>
+            <li><a href="web.html">Web Development</a></li>
+            <li><a href="graphics.html">Graphic Design</a></li>
+            <li><a href="data-analytics.html">Data Analytics</a></li>
+            <li><a href="accounting-package.html">Accounting Package Tally</a></li>
+            <li><a href="content-creation.html">Content Creation</a></li>
+            <li><a href="stock-market.html">Nepali Stock Market</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+
+    <a href="contact.html#inquiry-form" class="btn nav-btn">Free Counselling</a>
+
+    <button class="menu-toggle" aria-label="Open Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+</header>
+
+<section class="country-hero contact-page-hero">
+  <div class="container country-hero-container">
+
+    <div class="country-hero-content reveal">
+      <span class="section-tag">Contact Rinova</span>
+
+      <h1>
+        Let’s Plan Your
+        <span>Future Together</span>
+      </h1>
+
+      <p>
+        Whether you want to study abroad, prepare for IELTS/PTE, learn computer skills,
+        or join professional training, Rinova Education is here to guide you.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#inquiry-form" class="btn">Send Inquiry</a>
+        <a href="tel:+977015452444" class="btn-outline">Call Now</a>
+      </div>
+    </div>
+
+    <div class="country-hero-card reveal">
+      <img src="images/contact-hero.png" alt="Contact Rinova">
+      <h3>Free Counselling</h3>
+      <p>Study Abroad • IELTS • PTE • Skills Training • Career Guidance</p>
+    </div>
+
+  </div>
 </section>
 
-    <!-- Contact Content -->
-    <section class="section contact-main">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info fade-up">
-                    <h2 class="contact-title">Get In Touch</h2>
-                    <p class="contact-description">
-                        Ready to start your educational journey? We're here to help you every step of the way.
-                    </p>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div class="contact-details">
-                            <h4>Email Us</h4>
-                            <p>support@rinova.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div class="contact-details">
-                            <h4>Call Us</h4>
-                            <p>+977-01-5452444<br>+977-9712078837</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div class="contact-details">
-                            <h4>Visit Us</h4>
-                            <p>Yala Sadak, Kumaripati, Lalitpur, Nepal</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🕒</div>
-                        <div class="contact-details">
-                            <h4>Office Hours</h4>
-                            <p>Sunday - Friday: 7:00 AM - 6:00 PM<br>Saturday: Closed</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <form class="contact-form fade-up" id="contact-form"> <p id="form-status"></p>
-                    <h3 class="form-title">Book Your Consultation</h3>
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-input" placeholder="Full Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-input" placeholder="Email Address" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="service-select" class="visually-hidden">Select Service</label>
-                        <select id="service-select" name="service" class="form-input" required>
-                            <option value="">Select Service</option>
-                            <option value="study-abroad">Study Abroad</option>
-                            <option value="ielts">IELTS & PTE</option>
-                            <option value="language">Language Classes</option>
-                            <option value="computer">Computer Classes</option>
-                            <option value="tuition">Tuition Classes</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" class="form-input" rows="4" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn primary-btn form-submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<section class="top-universities section-padding">
+  <div class="container">
 
-    <!-- Map Section -->
-    <section class="section map-section">
-        <div class="container">
-            <h2 class="section-title text-center fade-up">Find Us</h2>
-            <div class="map-container fade-up">
-                <iframeiframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6!2d85.3240!3d27.7172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQzJzAyLjAiTiA4NcKwMTknMjYuNCJF!5e0!3m2!1sen!2snp!4v1234567890"
-                    width="100%" 
-                    height="400" 
-                    allowfullscreen="" 
-                    loading="lazy"
-                    title="Rinova International Educational Institute Location">
-                </iframe>
-            </div>
-        </div>
-    </section>
+    <div class="section-title reveal">
+      <span class="section-tag">Choose Your Purpose</span>
+      <h2>What Would You Like to Do?</h2>
+      <p>Select your purpose below and the inquiry form will automatically update.</p>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <div class="footer-logo">
-                        <div class="logo">Rinova</div>
-                        <span class="logo-text">International</span>
-                    </div>
-                    <p class="footer-description">
-                        Empowering students for global success through comprehensive educational services and expert guidance.
-                    </p>
-                </div>
-                
-                <div class="footer-column">
-                    <h4 class="footer-title">Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="aboutus.html">About Us</a>
-                        <a href="blog.html">Blogs</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h4 class="footer-title">Programs</h4>
-                    <div class="footer-links">
-                        <a href="abroad-study.html">Study Abroad</a>
-                        <a href="ielts-pte.html">IELTS & PTE</a>
-                        <a href="language-classes.html">Language Classes</a>
-                        <a href="computer-classes.html">Computer Classes</a>
-                        <a href="tuition-classes.html">Tuition Classes</a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h4 class="footer-title">Contact Info</h4>
-                    <div class="footer-contact">
-                        <p>📧 support@rinova.com</p>
-                        <p>📞 +977-01-5450510</p>
-                        <p>📱 +977-9712078837</p>
-                        <p>📍 Yala Sadak, Kumaripati, Lalitpur, Nepal</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Rinova International Educational Institute. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div class="university-logo-grid">
 
-    <script src="script.js"></script>
+      <button type="button" class="university-logo-card reveal contact-purpose-btn" data-service="Study Abroad">
+        <i class="fa-solid fa-plane-departure"></i>
+        <h4>Study Abroad</h4>
+        <span>Australia, USA, UK, Canada, Japan, Korea, India</span>
+      </button>
+
+      <button type="button" class="university-logo-card reveal contact-purpose-btn" data-service="IELTS Preparation">
+        <i class="fa-solid fa-language"></i>
+        <h4>IELTS Preparation</h4>
+        <span>Academic and General IELTS preparation support</span>
+      </button>
+
+      <button type="button" class="university-logo-card reveal contact-purpose-btn" data-service="PTE Preparation">
+        <i class="fa-solid fa-headset"></i>
+        <h4>PTE Preparation</h4>
+        <span>Computer-based PTE training and mock practice</span>
+      </button>
+
+      <button type="button" class="university-logo-card reveal contact-purpose-btn" data-service="Computer Classes">
+        <i class="fa-solid fa-computer"></i>
+        <h4>Computer Classes</h4>
+        <span>Basic and advanced computer courses</span>
+      </button>
+
+      <button type="button" class="university-logo-card reveal contact-purpose-btn" data-service="Professional Training">
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h4>Professional Training</h4>
+        <span>Python, Web Development, Graphic Design and more</span>
+      </button>
+
+      <button type="button" class="university-logo-card reveal contact-purpose-btn" data-service="General Inquiry">
+        <i class="fa-solid fa-circle-question"></i>
+        <h4>General Inquiry</h4>
+        <span>Ask us anything about Rinova services</span>
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="contact section-padding" id="inquiry-form">
+  <div class="container contact-container">
+
+    <div class="contact-content reveal">
+      <span class="section-tag light">Smart Inquiry Form</span>
+      <h2>Send Us Your Details</h2>
+      <p>Fill out the form and our team will contact you for counselling and guidance.</p>
+
+      <div class="contact-info">
+        <div><i class="fa-solid fa-location-dot"></i> Yala Sadak, Kumaripati, Lalitpur</div>
+        <div><i class="fa-solid fa-phone"></i> +977-01-5452444 | 9712078837</div>
+        <div><i class="fa-solid fa-envelope"></i> support@rinovaedu.com</div>
+        <div><i class="fa-solid fa-globe"></i> www.rinovaedu.com</div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="rinovaInquiryForm">
+
+      <input type="text" id="rinovaName" placeholder="Full Name" required>
+
+      <input type="tel" id="rinovaPhone" placeholder="Phone Number" required>
+
+      <input type="email" id="rinovaEmail" placeholder="Email Address">
+
+      <select id="rinovaService" required>
+        <option value="">Select Service</option>
+        <option value="Study Abroad">Study Abroad</option>
+        <option value="IELTS Preparation">IELTS Preparation</option>
+        <option value="PTE Preparation">PTE Preparation</option>
+        <option value="Computer Classes">Computer Classes</option>
+        <option value="Python Programming">Python Programming</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Data Analytics">Data Analytics</option>
+        <option value="Accounting Package Tally">Accounting Package Tally</option>
+        <option value="Content Creation">Content Creation</option>
+        <option value="Stock Market Training">Stock Market Training</option>
+        <option value="General Inquiry">General Inquiry</option>
+      </select>
+
+      <div id="rinovaDestinationBox" style="display:none;">
+        <select id="rinovaDestination">
+          <option value="">Preferred Study Destination</option>
+          <option value="Australia">Australia</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+          <option value="Japan">Japan</option>
+          <option value="Korea">Korea</option>
+          <option value="India">India</option>
+          <option value="Not Sure">Not Sure</option>
+        </select>
+      </div>
+
+      <textarea id="rinovaMessage" placeholder="Tell us more about your inquiry"></textarea>
+
+      <button type="submit" class="btn" id="rinovaSubmitBtn">Submit Inquiry</button>
+
+    </form>
+
+  </div>
+</section>
+
+<section class="why-australia section-padding">
+  <div class="container">
+
+    <div class="section-title reveal">
+      <span class="section-tag">Quick Contact</span>
+      <h2>Reach Rinova Instantly</h2>
+      <p>Contact us directly through call, WhatsApp, email, or visit our office.</p>
+    </div>
+
+    <div class="why-aus-grid">
+
+      <a href="tel:+977015452444" class="why-aus-card reveal">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Call Us</h3>
+        <p>+977-01-5452444</p>
+      </a>
+
+      <a href="https://wa.me/9779712078837" target="_blank" class="why-aus-card reveal">
+        <i class="fa-brands fa-whatsapp"></i>
+        <h3>WhatsApp</h3>
+        <p>9712078837</p>
+      </a>
+
+      <a href="mailto:support@rinovaedu.com" class="why-aus-card reveal">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email</h3>
+        <p>support@rinovaedu.com</p>
+      </a>
+
+      <a href="#map" class="why-aus-card reveal">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Visit Office</h3>
+        <p>Yala Sadak, Kumaripati, Lalitpur</p>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="process-section section-padding">
+  <div class="container">
+
+    <div class="section-title reveal">
+      <span class="section-tag">How We Respond</span>
+      <h2>Your Inquiry Journey</h2>
+    </div>
+
+    <div class="process-timeline">
+
+      <div class="process-step reveal">
+        <span>01</span>
+        <div>
+          <h3>Submit Inquiry</h3>
+          <p>Send your contact details and choose the service you are interested in.</p>
+        </div>
+      </div>
+
+      <div class="process-step reveal">
+        <span>02</span>
+        <div>
+          <h3>Profile Review</h3>
+          <p>Our team reviews your requirement, background, and preferred service.</p>
+        </div>
+      </div>
+
+      <div class="process-step reveal">
+        <span>03</span>
+        <div>
+          <h3>Free Counselling</h3>
+          <p>We contact you with suitable guidance, options, and next steps.</p>
+        </div>
+      </div>
+
+      <div class="process-step reveal">
+        <span>04</span>
+        <div>
+          <h3>Start Your Journey</h3>
+          <p>Begin your study abroad process, test preparation, or training program with Rinova.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="top-universities section-padding" id="map">
+  <div class="container">
+
+    <div class="section-title reveal">
+      <span class="section-tag">Office Location</span>
+      <h2>Visit Rinova Education</h2>
+      <p>We are located at Yala Sadak, Kumaripati, Lalitpur.</p>
+    </div>
+
+    <div class="contact-map-card reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.5164695944122!2d85.3179306750793!3d27.670427976203648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19e4cf3cd89d%3A0xcaca9d1dda3fe4d9!2sRinova%20Education!5e0!3m2!1sen!2snp!4v1779433833944!5m2!1sen!2snp"
+        width="100%"
+        height="420"
+        style="border:0; border-radius:30px;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<section class="requirements section-padding">
+  <div class="container requirements-container">
+
+    <div class="requirements-content reveal">
+      <span class="section-tag">Office Information</span>
+      <h2>Before You Visit</h2>
+      <p>You can call us before visiting to book a counselling time or confirm the right team member for your inquiry.</p>
+    </div>
+
+    <div class="requirements-list reveal">
+      <div><i class="fa-solid fa-check"></i> Address: Yala Sadak, Kumaripati, Lalitpur</div>
+      <div><i class="fa-solid fa-check"></i> Phone: +977-01-5452444</div>
+      <div><i class="fa-solid fa-check"></i> Mobile / WhatsApp: 9712078837</div>
+      <div><i class="fa-solid fa-check"></i> Email: support@rinovaedu.com</div>
+      <div><i class="fa-solid fa-check"></i> Website: www.rinovaedu.com</div>
+      <div><i class="fa-solid fa-check"></i> Book counselling before visiting for faster service</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="about-cta section-padding">
+  <div class="container about-cta-container reveal">
+
+    <h2>Not Sure Where to Start?</h2>
+
+    <p>
+      Talk to Rinova Education and get clear guidance for study abroad,
+      IELTS/PTE preparation, computer courses, and professional training.
+    </p>
+
+    <div class="about-cta-buttons">
+      <a href="#inquiry-form" class="btn">Book Free Counselling</a>
+      <a href="https://wa.me/9779712078837?text=Hello%20Rinova%20Education%2C%20I%20want%20counselling." target="_blank" class="btn-outline">Message on WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-container">
+
+    <div class="footer-about">
+      <img src="images/logo.png" alt="Rinova Education Logo">
+      <p>
+        Rinova Education helps students achieve international education,
+        career development, and skill growth with trusted guidance.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="who-we-are.html">Who We Are</a>
+      <a href="mission-vision.html">Mission & Vision</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>Study Abroad</h3>
+      <a href="study-australia.html">Australia</a>
+      <a href="study-usa.html">USA</a>
+      <a href="study-uk.html">UK</a>
+      <a href="study-canada.html">Canada</a>
+      <a href="study-japan.html">Japan</a>
+      <a href="study-korea.html">Korea</a>
+      <a href="study-india.html">India</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>Courses</h3>
+      <a href="ielts.html">IELTS Preparation</a>
+      <a href="pte.html">PTE Preparation</a>
+      <a href="computer-class.html">Computer Classes</a>
+      <a href="python.html">Python Programming</a>
+      <a href="web.html">Web Development</a>
+      <a href="graphics.html">Graphic Design</a>
+      <a href="data-analytics.html">Data Analytics</a>
+      <a href="accounting-package.html">Accounting Package Tally</a>
+      <a href="content-creation.html">Content Creation</a>
+      <a href="stock-market.html">Nepali Stock Market</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>Contact</h3>
+      <p>Yala Sadak, Kumaripati, Lalitpur</p>
+      <p>+977-01-5452444</p>
+      <p>9712078837</p>
+      <p>support@rinovaedu.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Rinova Education. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a href="tel:+977015452444" class="floating-call">
+  <i class="fa-solid fa-phone"></i>
+</a>
+
+<a href="https://wa.me/9779712078837?text=Hello%20Rinova%20Education%2C%20I%20want%20counselling."
+   class="floating-whatsapp"
+   target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAm1LImPJ96wxe9sy4kLA8YULkTqIz5btQ",
+    authDomain: "rinova-education-website.firebaseapp.com",
+    projectId: "rinova-education-website",
+    storageBucket: "rinova-education-website.firebasestorage.app",
+    messagingSenderId: "202309046466",
+    appId: "1:202309046466:web:8a96535067d15777e0ab5b"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  const form = document.getElementById("rinovaInquiryForm");
+  const service = document.getElementById("rinovaService");
+  const destinationBox = document.getElementById("rinovaDestinationBox");
+  const destination = document.getElementById("rinovaDestination");
+  const submitBtn = document.getElementById("rinovaSubmitBtn");
+  const purposeButtons = document.querySelectorAll(".contact-purpose-btn");
+
+  function updateDestination() {
+    if (service.value === "Study Abroad") {
+      destinationBox.style.display = "block";
+      destination.required = true;
+    } else {
+      destinationBox.style.display = "none";
+      destination.required = false;
+      destination.value = "";
+    }
+  }
+
+  service.addEventListener("change", updateDestination);
+
+  purposeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      service.value = button.dataset.service;
+      updateDestination();
+      document.getElementById("inquiry-form").scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    const inquiryData = {
+      fullName: document.getElementById("rinovaName").value.trim(),
+      phone: document.getElementById("rinovaPhone").value.trim(),
+      email: document.getElementById("rinovaEmail").value.trim(),
+      service: service.value,
+      destination: destination.value,
+      message: document.getElementById("rinovaMessage").value.trim(),
+      source: "Rinova Website Contact Page",
+      status: "New",
+      createdAt: serverTimestamp()
+    };
+
+    if (!inquiryData.fullName || !inquiryData.phone || !inquiryData.service) {
+      alert("Please fill full name, phone number and service.");
+      return;
+    }
+
+    if (inquiryData.service === "Study Abroad" && !inquiryData.destination) {
+      alert("Please select preferred study destination.");
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Submitting...";
+
+    try {
+      await addDoc(collection(db, "inquiries"), inquiryData);
+      alert("Inquiry submitted successfully!");
+      form.reset();
+      updateDestination();
+    } catch (error) {
+      console.error("Firebase Error:", error);
+      alert("Firebase submission failed. Please check Firestore rules.");
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Submit Inquiry";
+  }, true);
+</script>
+
+<script src="script.js"></script>
+
 </body>
 </html>
