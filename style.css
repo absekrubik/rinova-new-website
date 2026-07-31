@@ -1286,6 +1286,13 @@ img { max-width: 100%; display: block; }
   display: flex;
   gap: 10px;
 }
+.team-card,
+.team-image,
+.team-image img {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
+}
 
 .team-socials a {
   width: 34px;
