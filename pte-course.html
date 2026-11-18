@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PTE Preparation Course - Computer-Based English Test Training | Rinova Education</title>
+  <meta name="description" content="Master PTE with expert coaching. Comprehensive computer-based English test preparation with practice tests, personalized feedback, and proven strategies. Achieve 79+ score.">
+  <meta property="og:title" content="PTE Preparation Course - Expert Training & Mock Tests">
+  <meta property="og:description" content="Comprehensive PTE-A preparation with expert instructors, mock tests, and personalized study plans. Join 800+ successful students.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    :root {
+      --color-primary: #0052CC;
+      --color-accent: #06B6D4;
+      --color-light: #E0F2FE;
+      --color-text-dark: #0F172A;
+      --color-text-light: #475569;
+      --color-white: #FFFFFF;
+      --color-success: #10B981;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--color-text-dark);
+      background: var(--color-white);
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .nav-logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-back {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-back:hover {
+      transform: translateX(-4px);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 0.6rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 82, 204, 0.3);
+    }
+
+    .hero {
+      margin-top: 80px;
+      padding: 6rem 3rem;
+      background: linear-gradient(135deg, var(--color-light) 0%, #F0F9FF 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(0, 82, 204, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.25rem, 8vw, 4rem);
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--color-text-light);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 1rem 2rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(0, 82, 204, 0.3);
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(0, 82, 204, 0.4);
+    }
+
+    .highlights {
+      max-width: 1200px;
+      margin: -3rem auto 4rem;
+      padding: 0 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      position: relative;
+      z-index: 5;
+    }
+
+    .highlight-card {
+      background: var(--color-white);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      border-top: 4px solid var(--color-primary);
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 82, 204, 0.15);
+    }
+
+    .highlight-number {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight-label {
+      font-size: 0.95rem;
+      color: var(--color-text-light);
+      font-weight: 500;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 3rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 3rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: linear-gradient(135deg, var(--color-white) 0%, #F9FAFB 100%);
+      padding: 2.5rem;
+      border-radius: 1rem;
+      border-left: 4px solid var(--color-primary);
+      transition: all 0.3s;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 82, 204, 0.15);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+      color: var(--color-text-dark);
+      font-weight: 700;
+    }
+
+    .feature-card p {
+      color: var(--color-text-light);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .comparison-table thead {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 1rem;
+      text-align: left;
+      font-size: 0.9rem;
+      border-bottom: 1px solid #E2E8F0;
+    }
+
+    .comparison-table th {
+      font-weight: 700;
+    }
+
+    .comparison-table tbody tr:hover {
+      background: #F8FAFC;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 4rem 3rem;
+      text-align: center;
+      margin: 5rem 0 0 0;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 900;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn {
+      background: var(--color-white);
+      color: var(--color-primary);
+      padding: 1rem 2.5rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .fab-container {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 999;
+    }
+
+    .fab {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: var(--color-white);
+      transition: all 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border: none;
+      cursor: pointer;
+    }
+
+    .fab-phone {
+      background: var(--color-primary);
+    }
+
+    .fab-phone:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 82, 204, 0.4);
+    }
+
+    .fab-whatsapp {
+      background: #25D366;
+    }
+
+    .fab-whatsapp:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    footer {
+      background: var(--color-text-dark);
+      color: #F1F5F9;
+      padding: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 1rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .hero {
+        margin-top: 100px;
+        padding: 3rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .highlights {
+        margin: -2rem 1rem 2rem;
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .section {
+        padding: 0 1rem;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta {
+        padding: 2rem 1rem;
+      }
+
+      .cta h2 {
+        font-size: 1.75rem;
+      }
+
+      .fab-container {
+        bottom: 1rem;
+        right: 1rem;
+        flex-direction: row;
+        gap: 0.75rem;
+      }
+
+      .fab {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+      }
+
+      footer {
+        padding: 2rem 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        padding: 0.75rem;
+      }
+
+      .hero {
+        margin-top: 120px;
+        padding: 2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .highlights {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+
+      .fab {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="education-hub.html" class="nav-back"><i class="fas fa-arrow-left"></i> Back to Hub</a>
+    <div class="nav-logo"><i class="fas fa-laptop"></i> PTE Course</div>
+    <a href="tel:+977015452444" class="nav-cta"><i class="fas fa-headset"></i> Enroll Now</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Master PTE-A English Test</h1>
+      <p>Comprehensive computer-based English test preparation with expert coaching, unlimited mock tests, and personalized feedback. Achieve 79+ score and get admitted to your dream university.</p>
+      <a href="#enroll" class="btn-primary"><i class="fas fa-pencil-alt"></i> Enroll in Course</a>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <div class="highlight-card">
+      <div class="highlight-number">82+</div>
+      <div class="highlight-label">Average Score Achieved</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-number">800+</div>
+      <div class="highlight-label">Students Trained</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-number">92%</div>
+      <div class="highlight-label">Success Rate</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-number">40+</div>
+      <div class="highlight-label">Mock Tests</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Why PTE-A for Study Abroad?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Quick Results</h3>
+        <p>Get results in 5 days. Unlike IELTS, PTE-A provides scores faster, enabling quicker university applications.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-robot"></i></div>
+        <h3>AI-Based Scoring</h3>
+        <p>Computer-based with AI evaluation. More objective scoring, no human bias. Fair and consistent assessment.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-globe"></i></div>
+        <h3>Globally Accepted</h3>
+        <p>Accepted by 3000+ universities worldwide. Recognized in USA, UK, Canada, Australia, and New Zealand.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-calendar"></i></div>
+        <h3>Year-Round Testing</h3>
+        <p>Available 50+ times per year. Choose your test date and center conveniently. No long waiting periods.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-headphones"></i></div>
+        <h3>Integrated Skills</h3>
+        <p>Mimics real communication. Speaking & Writing integrated, Reading & Listening combined. Practical English.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Band Score Guarantee</h3>
+        <p>Achieve target score or get free classes. 92% of students reach their target band within 6 weeks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">PTE-A vs IELTS Comparison</h2>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Criteria</th>
+          <th>PTE-A</th>
+          <th>IELTS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Test Format</strong></td>
+          <td>Computer-Based</td>
+          <td>Paper & Speaking</td>
+        </tr>
+        <tr>
+          <td><strong>Result Time</strong></td>
+          <td>5 Days</td>
+          <td>13 Days</td>
+        </tr>
+        <tr>
+          <td><strong>Scoring</strong></td>
+          <td>AI-Evaluated (10-90)</td>
+          <td>Human-Evaluated (1-9)</td>
+        </tr>
+        <tr>
+          <td><strong>Cost</strong></td>
+          <td>$160 USD</td>
+          <td>£200-300</td>
+        </tr>
+        <tr>
+          <td><strong>Frequency</strong></td>
+          <td>50+ Times/Year</td>
+          <td>4 Times/Month</td>
+        </tr>
+        <tr>
+          <td><strong>Universities</strong></td>
+          <td>3000+</td>
+          <td>9000+</td>
+        </tr>
+        <tr>
+          <td><strong>Speaking</strong></td>
+          <td>Computer-Based</td>
+          <td>Face-to-Face Interview</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Our Training Approach</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+        <h3>Diagnostic Assessment</h3>
+        <p>Initial test to identify weak areas. Personalized learning plan based on your profile and target score.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-chalkboard-user"></i></div>
+        <h3>Expert Training</h3>
+        <p>Certified PTE trainers with years of experience. Focus on strategies, not just grammar and vocabulary.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-laptop"></i></div>
+        <h3>Practice Tests</h3>
+        <p>40+ full-length mock tests. Timed practice to simulate actual exam conditions and build confidence.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Progress Tracking</h3>
+        <p>Detailed analytics after each test. Track improvement week-by-week with visual reports and insights.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-comments"></i></div>
+        <h3>Doubt Clearing</h3>
+        <p>24/7 support via WhatsApp, email, and live sessions. All doubts cleared immediately by expert trainers.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-award"></i></div>
+        <h3>Score Guarantee</h3>
+        <p>Not satisfied? Take additional free classes. 92% students achieve target in first attempt itself.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="enroll">
+    <h2>Ready to Score 79+ in PTE-A?</h2>
+    <p>Join 800+ successful students who achieved their target PTE scores. Start your preparation today with expert guidance and unlimited mock tests.</p>
+    <div class="cta-buttons">
+      <a href="tel:+977015452444" class="cta-btn"><i class="fas fa-phone"></i> Call Us</a>
+      <a href="https://wa.me/977015452444" class="cta-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </section>
+
+  <div class="fab-container">
+    <a href="tel:+977015452444" class="fab fab-phone" title="Call Rinova"><i class="fas fa-phone"></i></a>
+    <a href="https://wa.me/977015452444" class="fab fab-whatsapp" title="WhatsApp Rinova"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Rinova Education. All rights reserved.</p>
+    <p>
+      <a href="mailto:support@rinovaedu.com">support@rinovaedu.com</a> |
+      <a href="tel:+977015452444">+977-01-5452444</a> |
+      Yala Sadak, Kumaripati, Lalitpur, Nepal
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeScrollAnimations();
+      initializeNavigation();
+    });
+  </script>
+
+</body>
+</html>

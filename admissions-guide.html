@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Admissions Guide - SOP Writing, Applications & Tips | Rinova Education</title>
+  <meta name="description" content="Complete university admissions guide. Learn SOP writing, application strategy, profile building, and admission requirements. Expert tips to get accepted at top universities.">
+  <meta property="og:title" content="University Admissions Guide - SOP & Application Tips">
+  <meta property="og:description" content="Expert admissions guidance for international students. Learn SOP writing, application tips, and proven strategies.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    :root {
+      --color-primary: #0052CC;
+      --color-accent: #06B6D4;
+      --color-light: #E0F2FE;
+      --color-text-dark: #0F172A;
+      --color-text-light: #475569;
+      --color-white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--color-text-dark);
+      background: var(--color-white);
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .nav-logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-back {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-back:hover {
+      transform: translateX(-4px);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 0.6rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 82, 204, 0.3);
+    }
+
+    .hero {
+      margin-top: 80px;
+      padding: 6rem 3rem;
+      background: linear-gradient(135deg, var(--color-light) 0%, #F0F9FF 100%);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.25rem, 8vw, 4rem);
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--color-text-light);
+      max-width: 700px;
+      margin: 0 auto;
+      font-weight: 500;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 3rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 2rem;
+    }
+
+    .subsection-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-bottom: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: linear-gradient(135deg, var(--color-white) 0%, #F9FAFB 100%);
+      padding: 2rem;
+      border-radius: 1rem;
+      border-left: 4px solid var(--color-primary);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 82, 204, 0.15);
+    }
+
+    .card-icon {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+      color: var(--color-text-dark);
+      font-weight: 700;
+    }
+
+    .card p {
+      color: var(--color-text-light);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .checklist {
+      background: #F8FAFC;
+      padding: 2rem;
+      border-radius: 1rem;
+      border-left: 4px solid var(--color-accent);
+      margin-bottom: 2rem;
+    }
+
+    .checklist ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .checklist li {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .checklist i {
+      color: #10B981;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 2rem 0;
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      padding-left: 2rem;
+      border-left: 2px solid var(--color-accent);
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 0;
+      width: 12px;
+      height: 12px;
+      background: var(--color-primary);
+      border-radius: 50%;
+    }
+
+    .timeline-content h4 {
+      font-size: 1.1rem;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-content p {
+      color: var(--color-text-light);
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 4rem 3rem;
+      text-align: center;
+      margin: 5rem 0 0 0;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 900;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn {
+      background: var(--color-white);
+      color: var(--color-primary);
+      padding: 1rem 2.5rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .fab-container {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 999;
+    }
+
+    .fab {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: var(--color-white);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .fab-phone {
+      background: var(--color-primary);
+    }
+
+    .fab-phone:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 82, 204, 0.4);
+    }
+
+    .fab-whatsapp {
+      background: #25D366;
+    }
+
+    .fab-whatsapp:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    footer {
+      background: var(--color-text-dark);
+      color: #F1F5F9;
+      padding: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 1rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .hero {
+        margin-top: 100px;
+        padding: 3rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .section {
+        padding: 0 1rem;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta {
+        padding: 2rem 1rem;
+      }
+
+      .cta h2 {
+        font-size: 1.75rem;
+      }
+
+      .fab-container {
+        bottom: 1rem;
+        right: 1rem;
+        flex-direction: row;
+        gap: 0.75rem;
+      }
+
+      .fab {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+      }
+
+      footer {
+        padding: 2rem 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        padding: 0.75rem;
+      }
+
+      .hero {
+        margin-top: 120px;
+        padding: 2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+
+      .fab {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="education-hub.html" class="nav-back"><i class="fas fa-arrow-left"></i> Back to Hub</a>
+    <div class="nav-logo"><i class="fas fa-clipboard-list"></i> Admissions Guide</div>
+    <a href="tel:+977015452444" class="nav-cta"><i class="fas fa-headset"></i> Get Help</a>
+  </nav>
+
+  <section class="hero">
+    <h1>University Admissions Guide</h1>
+    <p>Master the art of university applications. Learn SOP writing, profile building, application strategy, and proven tips to get accepted at top universities worldwide.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Key Steps to University Admission</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h4>Step 1: Research Universities & Programs</h4>
+          <p>Explore universities matching your profile, interests, and goals. Check admission requirements, tuition fees, scholarship availability, and campus facilities. Make a list of 5-7 target universities.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h4>Step 2: Prepare Academic Documents</h4>
+          <p>Gather official transcripts, bachelor's degree certificate, course descriptions. Get them attested by your university. Ensure translations are certified if in different language.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h4>Step 3: Take English Proficiency Tests</h4>
+          <p>Register for IELTS, TOEFL, or PTE-A. Prepare for 2-3 months and achieve required scores (IELTS 6.5+, TOEFL 90+, PTE 79+). Request official score reports sent to universities.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h4>Step 4: Write Statement of Purpose (SOP)</h4>
+          <p>Craft a compelling SOP explaining why you want to study the program, your career goals, and why this university is perfect. Keep it concise (500-750 words), personalized, and error-free.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h4>Step 5: Secure Recommendation Letters</h4>
+          <p>Request 2-3 recommendation letters from professors or employers. Give them adequate time (2-3 weeks). They should highlight your academic abilities, character, and suitability for the program.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h4>Step 6: Submit Online Applications</h4>
+          <p>Register on university portals and complete applications. Upload all documents, essays, and SOP. Pay application fees (typically $50-100). Meet all deadlines carefully.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h4>Step 7: Attend Interviews (if required)</h4>
+          <p>Some universities conduct interviews. Prepare to discuss your profile, goals, and specific reasons for choosing their program. Practice common questions and speak confidently.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h4>Step 8: Receive Admission Decision & Enroll</h4>
+          <p>Receive acceptance/rejection within 4-8 weeks. Upon acceptance, accept the offer, pay deposits, arrange accommodation, and begin visa process if international student.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Statement of Purpose (SOP) Writing Tips</h2>
+    <div class="content-grid">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-pencil"></i></div>
+        <h3>Be Specific & Personal</h3>
+        <p>Avoid generic statements. Explain YOUR unique story, goals, and passion. Mention specific courses or research interests. Make it personal and authentic to stand out.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+        <h3>Show Clear Goals</h3>
+        <p>Articulate short-term (2-3 years) and long-term (5+ years) career goals. Explain how this program fits your goals. Connect your past, present, and future convincingly.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-star"></i></div>
+        <h3>Highlight Strengths</h3>
+        <p>Showcase your academic achievements, relevant experience, skills, and accomplishments. Use concrete examples. Demonstrate why you're a suitable candidate for the program.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-building"></i></div>
+        <h3>Why This University?</h3>
+        <p>Research the university deeply. Mention specific faculty, programs, facilities, or opportunities. Show genuine interest. Generic SOP hurt your chances.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-book"></i></div>
+        <h3>Strong Opening & Closing</h3>
+        <p>Begin with a compelling statement. End with a powerful conclusion. Both should leave a lasting impression. Avoid clichés and overused phrases.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-check"></i></div>
+        <h3>Proofread Thoroughly</h3>
+        <p>No grammar, spelling, or punctuation errors. Read aloud multiple times. Get feedback from mentors. Poor writing quality hurts your credibility significantly.</p>
+      </div>
+    </div>
+
+    <div class="checklist">
+      <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">SOP Checklist</h3>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> <strong>500-750 words</strong> - Appropriate length</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Personalized</strong> - Specific to the university</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Clear structure</strong> - Introduction, body, conclusion</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Quantifiable achievements</strong> - Use numbers, rankings, scores</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Career goals clear</strong> - Short & long term</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Why this program?</strong> - Specific reasons</li>
+        <li><i class="fas fa-check-circle"></i> <strong>No negative tone</strong> - Always positive and confident</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Error-free</strong> - Perfect grammar & spelling</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Application Requirements Checklist</h2>
+    <div class="checklist">
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Official academic transcripts (attested)</li>
+        <li><i class="fas fa-check-circle"></i> Bachelor's degree certificate/diploma</li>
+        <li><i class="fas fa-check-circle"></i> English proficiency test scores (IELTS/TOEFL/PTE)</li>
+        <li><i class="fas fa-check-circle"></i> Statement of Purpose (SOP) - 500-750 words</li>
+        <li><i class="fas fa-check-circle"></i> 2-3 recommendation letters</li>
+        <li><i class="fas fa-check-circle"></i> Curriculum Vitae (CV) or Resume</li>
+        <li><i class="fas fa-check-circle"></i> Passport scan (valid for 6+ months)</li>
+        <li><i class="fas fa-check-circle"></i> Essays (specific to university/program)</li>
+        <li><i class="fas fa-check-circle"></i> Application fee payment receipt</li>
+        <li><i class="fas fa-check-circle"></i> Any other supporting documents requested</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Need Help with Your Applications?</h2>
+    <p>Our expert advisors can help with SOP writing, application strategy, and interview preparation. Get personalized guidance to maximize your admission chances.</p>
+    <div class="cta-buttons">
+      <a href="tel:+977015452444" class="cta-btn"><i class="fas fa-phone"></i> Schedule Consultation</a>
+      <a href="https://wa.me/977015452444" class="cta-btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </section>
+
+  <div class="fab-container">
+    <a href="tel:+977015452444" class="fab fab-phone" title="Call Rinova"><i class="fas fa-phone"></i></a>
+    <a href="https://wa.me/977015452444" class="fab fab-whatsapp" title="WhatsApp Rinova"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Rinova Education. All rights reserved.</p>
+    <p>
+      <a href="mailto:support@rinovaedu.com">support@rinovaedu.com</a> |
+      <a href="tel:+977015452444">+977-01-5452444</a> |
+      Yala Sadak, Kumaripati, Lalitpur, Nepal
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeScrollAnimations();
+      initializeNavigation();
+    });
+  </script>
+
+</body>
+</html>

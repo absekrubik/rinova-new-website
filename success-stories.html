@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Success Stories - Rinova Education Alumni Achievements | Rinova Education</title>
+  <meta name="description" content="Inspiring success stories from Rinova Education students who studied abroad. Read testimonials from graduates at top universities in USA, UK, Canada, Japan, Korea, and India.">
+  <meta property="og:title" content="Student Success Stories - Rinova Education Alumni">
+  <meta property="og:description" content="Real stories from successful international students. From university admissions to career achievements globally.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    :root {
+      --color-primary: #0052CC;
+      --color-accent: #06B6D4;
+      --color-light: #E0F2FE;
+      --color-text-dark: #0F172A;
+      --color-text-light: #475569;
+      --color-white: #FFFFFF;
+      --color-success: #10B981;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--color-text-dark);
+      background: var(--color-white);
+      line-height: 1.6;
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .nav-logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-back {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-back:hover {
+      transform: translateX(-4px);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 0.6rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 82, 204, 0.3);
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      margin-top: 80px;
+      padding: 6rem 3rem;
+      background: linear-gradient(135deg, var(--color-light) 0%, #F0F9FF 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(0, 82, 204, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.25rem, 8vw, 4rem);
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--color-text-light);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-weight: 500;
+    }
+
+    /* ===== STATS SECTION ===== */
+    .stats {
+      max-width: 1200px;
+      margin: -3rem auto 4rem;
+      padding: 0 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      position: relative;
+      z-index: 5;
+    }
+
+    .stat-card {
+      background: var(--color-white);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      border-top: 4px solid var(--color-primary);
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 82, 204, 0.15);
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.95rem;
+      color: var(--color-text-light);
+      font-weight: 500;
+    }
+
+    /* ===== STORIES SECTION ===== */
+    .stories {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 3rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 3rem;
+    }
+
+    .stories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+
+    .story-card {
+      background: var(--color-white);
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s;
+      border-top: 4px solid var(--color-accent);
+    }
+
+    .story-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 25px 50px rgba(0, 82, 204, 0.2);
+    }
+
+    .story-avatar {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+
+    .story-content {
+      padding: 2rem;
+    }
+
+    .story-name {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .story-meta {
+      font-size: 0.9rem;
+      color: var(--color-text-light);
+      margin-bottom: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .meta-item i {
+      color: var(--color-accent);
+    }
+
+    .story-quote {
+      font-size: 0.95rem;
+      color: var(--color-text-light);
+      line-height: 1.8;
+      font-style: italic;
+      padding: 1.5rem;
+      background: #F8FAFC;
+      border-left: 3px solid var(--color-accent);
+      border-radius: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .story-achievements {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .achievement {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--color-text-dark);
+    }
+
+    .achievement i {
+      color: var(--color-success);
+      margin-top: 0.25rem;
+      flex-shrink: 0;
+    }
+
+    /* ===== STATS COUNTER ===== */
+    .impact {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 4rem 3rem;
+      text-align: center;
+      margin: 5rem 0;
+    }
+
+    .impact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 900;
+    }
+
+    .impact-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .impact-stat {
+      text-align: center;
+    }
+
+    .impact-number {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+    }
+
+    .impact-label {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* ===== CTA SECTION ===== */
+    .cta {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 4rem 3rem;
+      text-align: center;
+      margin: 5rem 0 0 0;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 900;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn-primary {
+      background: var(--color-white);
+      color: var(--color-primary);
+      padding: 1rem 2.5rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cta-btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .cta-btn-secondary {
+      background: transparent;
+      color: var(--color-white);
+      padding: 1rem 2.5rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: 2px solid var(--color-white);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cta-btn-secondary:hover {
+      background: var(--color-white);
+      color: var(--color-primary);
+      transform: translateY(-3px);
+    }
+
+    /* ===== FLOATING ACTION BUTTONS ===== */
+    .fab-container {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 999;
+    }
+
+    .fab {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: var(--color-white);
+      transition: all 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border: none;
+      cursor: pointer;
+    }
+
+    .fab-phone {
+      background: var(--color-primary);
+    }
+
+    .fab-phone:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 82, 204, 0.4);
+    }
+
+    .fab-whatsapp {
+      background: #25D366;
+    }
+
+    .fab-whatsapp:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--color-text-dark);
+      color: #F1F5F9;
+      padding: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== RESPONSIVE DESIGN ===== */
+    @media (max-width: 768px) {
+      nav {
+        padding: 1rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .nav-logo {
+        font-size: 1rem;
+      }
+
+      .nav-back {
+        font-size: 0.8rem;
+      }
+
+      .hero {
+        margin-top: 100px;
+        padding: 3rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .stats {
+        margin: -2rem 1rem 2rem;
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .stat-card {
+        padding: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .stories-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .impact {
+        padding: 2rem 1rem;
+      }
+
+      .impact h2 {
+        font-size: 1.75rem;
+      }
+
+      .impact-number {
+        font-size: 2.5rem;
+      }
+
+      .cta {
+        padding: 2rem 1rem;
+      }
+
+      .cta h2 {
+        font-size: 1.75rem;
+      }
+
+      .cta p {
+        font-size: 1rem;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .cta-btn-primary,
+      .cta-btn-secondary {
+        width: 100%;
+      }
+
+      .fab-container {
+        bottom: 1rem;
+        right: 1rem;
+        flex-direction: row;
+        gap: 0.75rem;
+      }
+
+      .fab {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+      }
+
+      footer {
+        padding: 2rem 1rem;
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        padding: 0.75rem;
+      }
+
+      .nav-logo {
+        font-size: 0.9rem;
+      }
+
+      .nav-back,
+      .nav-cta {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+      }
+
+      .hero {
+        margin-top: 120px;
+        padding: 2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+
+      .stat-card {
+        padding: 1rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .stories-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .story-card {
+        margin-bottom: 1rem;
+      }
+
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+
+      .cta-btn-primary,
+      .cta-btn-secondary {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      .fab-container {
+        gap: 0.5rem;
+      }
+
+      .fab {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="education-hub.html" class="nav-back"><i class="fas fa-arrow-left"></i> Back to Hub</a>
+    <div class="nav-logo"><i class="fas fa-star"></i> Success Stories</div>
+    <a href="tel:+977015452444" class="nav-cta"><i class="fas fa-headset"></i> Get Counselling</a>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Student Success Stories</h1>
+      <p>Meet our alumni who achieved their dreams of studying abroad. Real stories of success, determination, and transformation from Rinova Education students.</p>
+    </div>
+  </section>
+
+  <!-- ===== STATS SECTION ===== -->
+  <section class="stats">
+    <div class="stat-card">
+      <div class="stat-number">5000+</div>
+      <div class="stat-label">Students Guided</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">95%</div>
+      <div class="stat-label">Success Rate</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">7+</div>
+      <div class="stat-label">Countries</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">500+</div>
+      <div class="stat-label">Scholarships Won</div>
+    </div>
+  </section>
+
+  <!-- ===== SUCCESS STORIES SECTION ===== -->
+  <section class="stories">
+    <h2 class="section-title">Meet Our Alumni</h2>
+
+    <div class="stories-grid">
+      <!-- Story 1 -->
+      <div class="story-card">
+        <div class="story-avatar">🎓</div>
+        <div class="story-content">
+          <div class="story-name">Priya Sharma</div>
+          <div class="story-meta">
+            <div class="meta-item"><i class="fas fa-map-marker-alt"></i> Harvard University, USA</div>
+            <div class="meta-item"><i class="fas fa-calendar"></i> Class of 2024</div>
+          </div>
+          <div class="story-quote">"Rinova's guidance made my Harvard dream a reality. From profile building to essay refinement, they were with me every step. Now I'm interning at a top tech company!"</div>
+          <div class="story-achievements">
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>Full Scholarship (3 years) - $200,000+</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>Computer Science Major</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>F-1 OPT Work Authorization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story 2 -->
+      <div class="story-card">
+        <div class="story-avatar">📚</div>
+        <div class="story-content">
+          <div class="story-name">Amit Patel</div>
+          <div class="story-meta">
+            <div class="meta-item"><i class="fas fa-map-marker-alt"></i> University of Cambridge, UK</div>
+            <div class="meta-item"><i class="fas fa-calendar"></i> Class of 2023</div>
+          </div>
+          <div class="story-quote">"Cambridge was my dream, and Rinova made it possible. Their Chevening scholarship coaching helped me win this prestigious award. Life-changing experience!"</div>
+          <div class="story-achievements">
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>Chevening Scholar - Full Funding</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>Masters in Mathematics</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>Post-Study Work Visa (2 Years)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story 3 -->
+      <div class="story-card">
+        <div class="story-avatar">🏆</div>
+        <div class="story-content">
+          <div class="story-name">Sarah Chen</div>
+          <div class="story-meta">
+            <div class="meta-item"><i class="fas fa-map-marker-alt"></i> University of Toronto, Canada</div>
+            <div class="meta-item"><i class="fas fa-calendar"></i> Class of 2022</div>
+          </div>
+          <div class="story-quote">"Rinova guided me through the entire process - from choosing Canada as my destination to securing permanent residency. Now I'm working as a Software Engineer in Toronto!"</div>
+          <div class="story-achievements">
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>Merit Scholarship - CAD 40,000</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>MSc in Computer Science</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>Permanent Resident (PR)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story 4 -->
+      <div class="story-card">
+        <div class="story-avatar">🚀</div>
+        <div class="story-content">
+          <div class="story-name">Yuki Tanaka</div>
+          <div class="story-meta">
+            <div class="meta-item"><i class="fas fa-map-marker-alt"></i> Tokyo Institute of Technology, Japan</div>
+            <div class="meta-item"><i class="fas fa-calendar"></i> Class of 2023</div>
+          </div>
+          <div class="story-quote">"MEXT scholarship through Rinova changed my life. Full coverage, amazing education, and now I'm working for Sony. The experience was unforgettable!"</div>
+          <div class="story-achievements">
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>MEXT Scholarship - Full Coverage</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>M.Eng in Robotics</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>Employment at Sony (Tokyo)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story 5 -->
+      <div class="story-card">
+        <div class="story-avatar">💼</div>
+        <div class="story-content">
+          <div class="story-name">Min-jun Kim</div>
+          <div class="story-meta">
+            <div class="meta-item"><i class="fas fa-map-marker-alt"></i> KAIST, South Korea</div>
+            <div class="meta-item"><i class="fas fa-calendar"></i> Class of 2024</div>
+          </div>
+          <div class="story-quote">"KGSP scholarship with Rinova's guidance opened doors I didn't think possible. Currently doing my Masters in AI at KAIST with full support. Incredibly grateful!"</div>
+          <div class="story-achievements">
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>KGSP Scholarship - 100% Coverage</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>M.Sc in Artificial Intelligence</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>D-2 Student Visa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story 6 -->
+      <div class="story-card">
+        <div class="story-avatar">🌟</div>
+        <div class="story-content">
+          <div class="story-name">Ravi Kumar</div>
+          <div class="story-meta">
+            <div class="meta-item"><i class="fas fa-map-marker-alt"></i> IIT Delhi, India</div>
+            <div class="meta-item"><i class="fas fa-calendar"></i> Class of 2023</div>
+          </div>
+          <div class="story-quote">"As a Nepali student, IIT Delhi was the perfect choice with Rinova's support. Affordable education, world-class faculty, and now working at Google India. Best decision ever!"</div>
+          <div class="story-achievements">
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>M.Tech in Computer Science</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>Partial Scholarship - ₹8 Lakhs</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-check-circle"></i>
+              <span>Employment at Google (Bangalore)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT SECTION ===== -->
+  <section class="impact">
+    <h2>Our Impact by Numbers</h2>
+    <div class="impact-stats">
+      <div class="impact-stat">
+        <div class="impact-number">5000+</div>
+        <div class="impact-label">Students Counselled</div>
+      </div>
+      <div class="impact-stat">
+        <div class="impact-number">95%</div>
+        <div class="impact-label">Success Rate</div>
+      </div>
+      <div class="impact-stat">
+        <div class="impact-number">500+</div>
+        <div class="impact-label">Scholarships Won</div>
+      </div>
+      <div class="impact-stat">
+        <div class="impact-number">200+</div>
+        <div class="impact-label">Partner Universities</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta" id="contact">
+    <h2>Ready to Write Your Success Story?</h2>
+    <p>Join thousands of successful students who transformed their dreams into reality with Rinova Education. Your journey to world-class education starts here.</p>
+    <div class="cta-buttons">
+      <a href="tel:+977015452444" class="cta-btn-primary"><i class="fas fa-phone"></i> Start Your Journey</a>
+      <a href="https://wa.me/977015452444" class="cta-btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </section>
+
+  <!-- ===== FLOATING ACTION BUTTONS ===== -->
+  <div class="fab-container">
+    <a href="tel:+977015452444" class="fab fab-phone" title="Call Rinova"><i class="fas fa-phone"></i></a>
+    <a href="https://wa.me/977015452444" class="fab fab-whatsapp" title="WhatsApp Rinova"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 Rinova Education. All rights reserved.</p>
+    <p>
+      <a href="mailto:support@rinovaedu.com">support@rinovaedu.com</a> |
+      <a href="tel:+977015452444">+977-01-5452444</a> |
+      Yala Sadak, Kumaripati, Lalitpur, Nepal
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeScrollAnimations();
+      initializeNavigation();
+    });
+  </script>
+
+</body>
+</html>

@@ -7,25 +7,6 @@
     <lastmod>2026-09-04</lastmod>
   </url>
 
-  <url>
-    <loc>https://www.rinovaedu.com/education.html</loc>
-    <priority>0.95</priority>
-    <changefreq>weekly</changefreq>
-    <lastmod>2026-09-29</lastmod>
-  </url>
-  <url>
-    <loc>https://www.rinovaedu.com/creatives.html</loc>
-    <priority>0.95</priority>
-    <changefreq>weekly</changefreq>
-    <lastmod>2026-09-29</lastmod>
-  </url>
-  <url>
-    <loc>https://www.rinovaedu.com/tuition.html</loc>
-    <priority>0.85</priority>
-    <changefreq>monthly</changefreq>
-    <lastmod>2026-09-29</lastmod>
-  </url>
-
   <!-- About Pages -->
   <url>
     <loc>https://www.rinovaedu.com/who-we-are.html</loc>

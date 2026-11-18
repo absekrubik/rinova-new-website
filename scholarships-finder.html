@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scholarship & Funding Guide - International Student Opportunities | Rinova Education</title>
+  <meta name="description" content="Comprehensive scholarship guide for international students. Discover government scholarships, university grants, and funding opportunities in USA, UK, Canada, Japan, Korea, India.">
+  <meta property="og:title" content="Scholarship & Funding Guide for International Students">
+  <meta property="og:description" content="Find scholarships and funding opportunities. MEXT, KGSP, Chevening, Erasmus+, and 100+ scholarships for study abroad.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    :root {
+      --color-primary: #0052CC;
+      --color-accent: #06B6D4;
+      --color-light: #E0F2FE;
+      --color-text-dark: #0F172A;
+      --color-text-light: #475569;
+      --color-white: #FFFFFF;
+      --color-success: #10B981;
+      --color-warning: #F59E0B;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; color: var(--color-text-dark); background: var(--color-white); line-height: 1.6; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px); padding: 1rem 3rem; display: flex; justify-content: space-between;
+      align-items: center; z-index: 1000; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .nav-logo { font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #0052CC 0%, #06B6D4 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none;
+    }
+
+    .nav-back { color: #0052CC; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+    .nav-back:hover { transform: translateX(-4px); }
+
+    .hero-section {
+      margin-top: 80px; padding: 6rem 3rem; background: linear-gradient(135deg, #E0F2FE 0%, #F0F9FF 100%); text-align: center;
+    }
+
+    .hero-section h1 { font-size: clamp(2.25rem, 8vw, 4.5rem); font-weight: 800; color: #0052CC; margin-bottom: 1rem; }
+    .hero-section p { font-size: 1.125rem; color: #475569; max-width: 700px; margin: 0 auto; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 3rem; }
+    .section { padding: 4rem 0; }
+    .section-title { font-size: 2.5rem; font-weight: 800; color: #0052CC; margin-bottom: 0.5rem; text-align: center; }
+    .section-subtitle { text-align: center; color: #475569; margin-bottom: 3rem; font-size: 1.1rem; }
+
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+    .stat-card { background: linear-gradient(135deg, #E0F2FE 0%, #F0F9FF 100%); padding: 2rem; border-radius: 1rem;
+      text-align: center; border: 2px solid #06B6D4;
+    }
+    .stat-number { font-size: 2.5rem; font-weight: 800; color: #0052CC; }
+    .stat-label { color: #475569; margin-top: 0.5rem; }
+
+    .scholarships-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+    .scholarship-card { background: white; border-radius: 1rem; overflow: hidden; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s; border-top: 4px solid #0052CC;
+    }
+    .scholarship-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15); }
+
+    .scholarship-header { padding: 2rem; background: linear-gradient(135deg, rgba(0, 82, 204, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+      border-bottom: 1px solid #E0E7FF;
+    }
+    .scholarship-header h3 { font-size: 1.5rem; color: #0052CC; margin-bottom: 0.5rem; }
+    .scholarship-country { font-size: 3rem; margin-bottom: 1rem; }
+
+    .award-badge { background: #10B981; color: white; padding: 0.5rem 1rem; border-radius: 2rem;
+      display: inline-block; font-weight: 600; font-size: 0.85rem; margin-top: 1rem;
+    }
+
+    .scholarship-content { padding: 2rem; }
+    .scholarship-detail { margin-bottom: 1.5rem; }
+    .scholarship-detail strong { color: #0052CC; display: block; margin-bottom: 0.5rem; font-size: 0.95rem; }
+    .scholarship-detail p { color: #475569; font-size: 0.9rem; margin: 0; }
+
+    .eligibility-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem; }
+    .eligibility-tag { background: #F0F9FF; padding: 0.4rem 0.8rem; border-radius: 1rem;
+      font-size: 0.8rem; color: #0052CC; border: 1px solid #06B6D4;
+    }
+
+    .deadline { background: linear-gradient(135deg, #FEFCE8 0%, #FEF3C7 100%); padding: 1rem;
+      border-radius: 0.75rem; border-left: 4px solid #F59E0B; margin-top: 1.5rem;
+    }
+    .deadline strong { color: #D97706; }
+
+    .filter-section { background: #F8FAFC; padding: 2rem; border-radius: 1rem; margin-bottom: 3rem; }
+    .filter-title { font-size: 1.25rem; font-weight: 700; color: #0052CC; margin-bottom: 1rem; }
+    .filter-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .filter-btn { padding: 0.7rem 1.5rem; background: white; border: 2px solid #06B6D4; border-radius: 2rem;
+      color: #0052CC; cursor: pointer; font-weight: 600; transition: all 0.3s; font-size: 0.9rem;
+    }
+    .filter-btn:hover, .filter-btn.active { background: #0052CC; color: white; }
+
+    .how-to-apply { background: linear-gradient(135deg, #E0F2FE 0%, #F0F9FF 100%); padding: 3rem;
+      border-radius: 1rem; margin-top: 4rem;
+    }
+    .how-to-apply h3 { color: #0052CC; margin-bottom: 2rem; font-size: 1.75rem; }
+
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .step-box { background: white; padding: 2rem; border-radius: 0.75rem; border-left: 4px solid #06B6D4; }
+    .step-number { font-size: 2rem; font-weight: 800; color: #0052CC; margin-bottom: 0.5rem; }
+    .step-box h4 { color: #0052CC; margin-bottom: 1rem; font-size: 1.1rem; }
+    .step-box p { color: #475569; font-size: 0.9rem; }
+
+    footer { background: #0F172A; color: #F1F5F9; padding: 3rem; text-align: center; margin-top: 4rem; font-size: 0.875rem; }
+    footer a { color: #06B6D4; text-decoration: none; }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem; flex-direction: column; gap: 1rem; }
+      .hero-section { padding: 3rem 1rem; margin-top: 120px; }
+      .container { padding: 0 1rem; }
+      .section-title { font-size: 1.75rem; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .scholarships-grid { grid-template-columns: 1fr; }
+      .filter-buttons { flex-direction: column; }
+      .filter-btn { width: 100%; }
+      .steps-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="/" class="nav-back"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    <div class="nav-logo">SCHOLARSHIPS & FUNDING</div>
+    <a href="education-hub.html" style="text-decoration: none; color: #0052CC; font-weight: 600;">Education Hub</a>
+  </nav>
+
+  <section class="hero-section">
+    <h1>Scholarship & Funding Guide</h1>
+    <p>Discover government scholarships, university grants, and funding opportunities. We help international students find and win scholarships worth 5 crores+ annually.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Active Scholarships</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">₹50 Cr+</div>
+          <div class="stat-label">Total Available</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">89%</div>
+          <div class="stat-label">Success Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Fully Funded</div>
+        </div>
+      </div>
+
+      <div class="section-title">Featured Scholarships by Country</div>
+      <div class="section-subtitle">Government-backed scholarships covering tuition, living expenses, and more</div>
+
+      <div class="scholarships-grid">
+        <!-- USA Scholarships -->
+        <div class="scholarship-card">
+          <div class="scholarship-header">
+            <div class="scholarship-country">🇺🇸</div>
+            <h3>Fulbright Scholarship</h3>
+          </div>
+          <div class="scholarship-content">
+            <div class="scholarship-detail">
+              <strong>Coverage:</strong>
+              <p>Full tuition + living stipend (₹25-30L/year)</p>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Eligibility:</strong>
+              <div class="eligibility-tags">
+                <span class="eligibility-tag">Master's/PhD</span>
+                <span class="eligibility-tag">GPA 3.5+</span>
+                <span class="eligibility-tag">TOEFL 100+</span>
+              </div>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Available For:</strong>
+              <p>All fields of study at US universities</p>
+            </div>
+            <div class="deadline">
+              <strong>Deadline:</strong> August annually
+            </div>
+            <div class="award-badge"><i class="fas fa-check"></i> Highly Competitive</div>
+          </div>
+        </div>
+
+        <div class="scholarship-card">
+          <div class="scholarship-header">
+            <div class="scholarship-country">🇺🇸</div>
+            <h3>Hubert H. Humphrey Fellowship</h3>
+          </div>
+          <div class="scholarship-content">
+            <div class="scholarship-detail">
+              <strong>Coverage:</strong>
+              <p>Full sponsor funding (tuition + all living expenses)</p>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Eligibility:</strong>
+              <div class="eligibility-tags">
+                <span class="eligibility-tag">Professional Experience</span>
+                <span class="eligibility-tag">Bachelor's Required</span>
+                <span class="eligibility-tag">1-Year Program</span>
+              </div>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Available For:</strong>
+              <p>Masters students with 5+ years work experience</p>
+            </div>
+            <div class="deadline">
+              <strong>Deadline:</strong> March annually
+            </div>
+            <div class="award-badge"><i class="fas fa-check"></i> Fully Funded</div>
+          </div>
+        </div>
+
+        <!-- UK Scholarships -->
+        <div class="scholarship-card">
+          <div class="scholarship-header">
+            <div class="scholarship-country">🇬🇧</div>
+            <h3>Chevening Scholarship</h3>
+          </div>
+          <div class="scholarship-content">
+            <div class="scholarship-detail">
+              <strong>Coverage:</strong>
+              <p>Tuition + £18,296 annual living allowance</p>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Eligibility:</strong>
+              <div class="eligibility-tags">
+                <span class="eligibility-tag">Master's Only</span>
+                <span class="eligibility-tag">IELTS 7.5+</span>
+                <span class="eligibility-tag">3+ Years Experience</span>
+              </div>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Available For:</strong>
+              <p>Postgraduate studies at UK universities</p>
+            </div>
+            <div class="deadline">
+              <strong>Deadline:</strong> November 2024
+            </div>
+            <div class="award-badge"><i class="fas fa-check"></i> Prestigious</div>
+          </div>
+        </div>
+
+        <div class="scholarship-card">
+          <div class="scholarship-header">
+            <div class="scholarship-country">🇬🇧</div>
+            <h3>Commonwealth Scholarship</h3>
+          </div>
+          <div class="scholarship-content">
+            <div class="scholarship-detail">
+              <strong>Coverage:</strong>
+              <p>Full tuition + maintenance allowance</p>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Eligibility:</strong>
+              <div class="eligibility-tags">
+                <span class="eligibility-tag">Commonwealth Citizens</span>
+                <span class="eligibility-tag">Master's/PhD</span>
+                <span class="eligibility-tag">Strong Academic</span>
+              </div>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Available For:</strong>
+              <p>Taught and research postgraduate programmes</p>
+            </div>
+            <div class="deadline">
+              <strong>Deadline:</strong> October annually
+            </div>
+            <div class="award-badge"><i class="fas fa-check"></i> Fully Funded</div>
+          </div>
+        </div>
+
+        <!-- Canada Scholarships -->
+        <div class="scholarship-card">
+          <div class="scholarship-header">
+            <div class="scholarship-country">🇨🇦</div>
+            <h3>Vanier CGS</h3>
+          </div>
+          <div class="scholarship-content">
+            <div class="scholarship-detail">
+              <strong>Coverage:</strong>
+              <p>CAD 50,000/year (₹25L+) for PhD</p>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Eligibility:</strong>
+              <div class="eligibility-tags">
+                <span class="eligibility-tag">Doctoral Students</span>
+                <span class="eligibility-tag">Outstanding Academics</span>
+                <span class="eligibility-tag">Research Focus</span>
+              </div>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Available For:</strong>
+              <p>PhD programs at Canadian universities</p>
+            </div>
+            <div class="deadline">
+              <strong>Deadline:</strong> May annually
+            </div>
+            <div class="award-badge"><i class="fas fa-check"></i> Highly Competitive</div>
+          </div>
+        </div>
+
+        <div class="scholarship-card">
+          <div class="scholarship-header">
+            <div class="scholarship-country">🇨🇦</div>
+            <h3>Lester B. Pearson Scholarship</h3>
+          </div>
+          <div class="scholarship-content">
+            <div class="scholarship-detail">
+              <strong>Coverage:</strong>
+              <p>Tuition + living costs + books (CAD 80,000+)</p>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Eligibility:</strong>
+              <div class="eligibility-tags">
+                <span class="eligibility-tag">International Students</span>
+                <span class="eligibility-tag">Undergraduates</span>
+                <span class="eligibility-tag">Exceptional Merit</span>
+              </div>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Available For:</strong>
+              <p>4-year undergraduate degree programs</p>
+            </div>
+            <div class="deadline">
+              <strong>Deadline:</strong> January annually
+            </div>
+            <div class="award-badge"><i class="fas fa-check"></i> Fully Funded</div>
+          </div>
+        </div>
+
+        <!-- Japan Scholarships -->
+        <div class="scholarship-card">
+          <div class="scholarship-header">
+            <div class="scholarship-country">🇯🇵</div>
+            <h3>MEXT Scholarship</h3>
+          </div>
+          <div class="scholarship-content">
+            <div class="scholarship-detail">
+              <strong>Coverage:</strong>
+              <p>Full tuition + ¥144,000-148,000 monthly (₹75k+)</p>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Eligibility:</strong>
+              <div class="eligibility-tags">
+                <span class="eligibility-tag">JLPT N2</span>
+                <span class="eligibility-tag">All Degrees</span>
+                <span class="eligibility-tag">Any Major</span>
+              </div>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Available For:</strong>
+              <p>Undergrad, master's, and doctoral studies</p>
+            </div>
+            <div class="deadline">
+              <strong>Deadline:</strong> May annually
+            </div>
+            <div class="award-badge"><i class="fas fa-check"></i> Fully Funded</div>
+          </div>
+        </div>
+
+        <!-- Korea Scholarships -->
+        <div class="scholarship-card">
+          <div class="scholarship-header">
+            <div class="scholarship-country">🇰🇷</div>
+            <h3>KGSP Scholarship</h3>
+          </div>
+          <div class="scholarship-content">
+            <div class="scholarship-detail">
+              <strong>Coverage:</strong>
+              <p>100% tuition + ₩900,000/month living (₹45k+)</p>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Eligibility:</strong>
+              <div class="eligibility-tags">
+                <span class="eligibility-tag">TOPIK 3+</span>
+                <span class="eligibility-tag">GPA 3.0+</span>
+                <span class="eligibility-tag">Master's/PhD</span>
+              </div>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Available For:</strong>
+              <p>Graduate programs at Korean universities</p>
+            </div>
+            <div class="deadline">
+              <strong>Deadline:</strong> August annually
+            </div>
+            <div class="award-badge"><i class="fas fa-check"></i> Fully Funded</div>
+          </div>
+        </div>
+
+        <!-- India Scholarships -->
+        <div class="scholarship-card">
+          <div class="scholarship-header">
+            <div class="scholarship-country">🇮🇳</div>
+            <h3>ICCR Scholarships</h3>
+          </div>
+          <div class="scholarship-content">
+            <div class="scholarship-detail">
+              <strong>Coverage:</strong>
+              <p>Full tuition + ₹5,000-8,000 monthly living</p>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Eligibility:</strong>
+              <div class="eligibility-tags">
+                <span class="eligibility-tag">All Degrees</span>
+                <span class="eligibility-tag">Indian Diaspora</span>
+                <span class="eligibility-tag">Merit-Based</span>
+              </div>
+            </div>
+            <div class="scholarship-detail">
+              <strong>Available For:</strong>
+              <p>Undergrad, master's, and PhD programs</p>
+            </div>
+            <div class="deadline">
+              <strong>Deadline:</strong> March annually
+            </div>
+            <div class="award-badge"><i class="fas fa-check"></i> Highly Selective</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="how-to-apply">
+        <h3><i class="fas fa-graduation-cap"></i> How to Apply for Scholarships</h3>
+        <div class="steps-grid">
+          <div class="step-box">
+            <div class="step-number">1</div>
+            <h4>Research Scholarships</h4>
+            <p>Explore 500+ scholarships matching your profile, country preference, and degree level.</p>
+          </div>
+          <div class="step-box">
+            <div class="step-number">2</div>
+            <h4>Check Eligibility</h4>
+            <p>Review academic requirements, test scores, and documentation needed for each scholarship.</p>
+          </div>
+          <div class="step-box">
+            <div class="step-number">3</div>
+            <h4>Prepare Documents</h4>
+            <p>Gather transcripts, test scores, LOE, SOP, and recommendation letters as required.</p>
+          </div>
+          <div class="step-box">
+            <div class="step-number">4</div>
+            <h4>Write Strong SOP</h4>
+            <p>Craft compelling Statement of Purpose highlighting your goals and why you deserve the scholarship.</p>
+          </div>
+          <div class="step-box">
+            <div class="step-number">5</div>
+            <h4>Submit Application</h4>
+            <p>Complete and submit all forms before deadline. Double-check for errors and completeness.</p>
+          </div>
+          <div class="step-box">
+            <div class="step-number">6</div>
+            <h4>Interview & Results</h4>
+            <p>Prepare for potential interviews. Results released within 2-4 weeks of selection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Rinova Education. All rights reserved.</p>
+    <p>
+      <a href="mailto:support@rinovaedu.com">support@rinovaedu.com</a> |
+      <a href="tel:+977015452444">+977-01-5452444</a> |
+      Yala Sadak, Kumaripati, Lalitpur, Nepal
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeScrollAnimations();
+      initializeNavigation();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IELTS Preparation Course - Expert Training, Mock Tests & Score Guarantee | Rinova Education</title>
+  <meta name="description" content="Master IELTS with Rinova Education. Expert instructors, comprehensive mock tests, personalized feedback, and proven strategies. Achieve your target band score with confidence.">
+  <meta property="og:title" content="IELTS Preparation Course - Expert Training & Mock Tests">
+  <meta property="og:description" content="Comprehensive IELTS preparation with expert coaching, mock tests, and personalized study plans. Join 1000+ successful students.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    :root {
+      --color-primary: #0052CC;
+      --color-accent: #06B6D4;
+      --color-light: #E0F2FE;
+      --color-text-dark: #0F172A;
+      --color-text-light: #475569;
+      --color-white: #FFFFFF;
+      --color-success: #10B981;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--color-text-dark);
+      background: var(--color-white);
+      line-height: 1.6;
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .nav-logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-back {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-back:hover {
+      transform: translateX(-4px);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 0.6rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 82, 204, 0.3);
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      margin-top: 80px;
+      padding: 6rem 3rem;
+      background: linear-gradient(135deg, var(--color-light) 0%, #F0F9FF 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(0, 82, 204, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.25rem, 8vw, 4rem);
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--color-text-light);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 1rem 2rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(0, 82, 204, 0.3);
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(0, 82, 204, 0.4);
+    }
+
+    /* ===== HIGHLIGHTS ===== */
+    .highlights {
+      max-width: 1200px;
+      margin: -3rem auto 4rem;
+      padding: 0 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      position: relative;
+      z-index: 5;
+    }
+
+    .highlight-card {
+      background: var(--color-white);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      border-top: 4px solid var(--color-primary);
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 82, 204, 0.15);
+    }
+
+    .highlight-number {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight-label {
+      font-size: 0.95rem;
+      color: var(--color-text-light);
+      font-weight: 500;
+    }
+
+    /* ===== CONTENT SECTIONS ===== */
+    .section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 3rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 3rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: linear-gradient(135deg, var(--color-white) 0%, #F9FAFB 100%);
+      padding: 2.5rem;
+      border-radius: 1rem;
+      border-left: 4px solid var(--color-primary);
+      transition: all 0.3s;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 82, 204, 0.15);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+      color: var(--color-text-dark);
+      font-weight: 700;
+    }
+
+    .feature-card p {
+      color: var(--color-text-light);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* ===== COURSE MODULES ===== */
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .module-card {
+      background: var(--color-white);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      border-top: 4px solid var(--color-accent);
+      transition: all 0.3s;
+    }
+
+    .module-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 82, 204, 0.15);
+    }
+
+    .module-header {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .module-header h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .module-content ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .module-content li {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      font-size: 0.95rem;
+      color: var(--color-text-light);
+    }
+
+    .module-content i {
+      color: var(--color-success);
+      margin-top: 0.25rem;
+      flex-shrink: 0;
+    }
+
+    /* ===== PRICING ===== */
+    .pricing-section {
+      background: linear-gradient(135deg, var(--color-light) 0%, #F0F9FF 100%);
+      padding: 4rem 3rem;
+      border-radius: 1rem;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .price-card {
+      background: var(--color-white);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      border: 2px solid transparent;
+      transition: all 0.3s;
+    }
+
+    .price-card.featured {
+      border-color: var(--color-primary);
+      transform: scale(1.05);
+    }
+
+    .price-card:hover {
+      box-shadow: 0 20px 40px rgba(0, 82, 204, 0.15);
+    }
+
+    .price-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .price-amount {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .price-details {
+      color: var(--color-text-light);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .price-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+
+    .price-features li {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--color-text-light);
+    }
+
+    .price-features i {
+      color: var(--color-success);
+      flex-shrink: 0;
+    }
+
+    .price-cta {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 1rem 2rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 100%;
+    }
+
+    .price-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 82, 204, 0.3);
+    }
+
+    /* ===== CTA SECTION ===== */
+    .cta {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 4rem 3rem;
+      text-align: center;
+      margin: 5rem 0 0 0;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 900;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn {
+      background: var(--color-white);
+      color: var(--color-primary);
+      padding: 1rem 2.5rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ===== FLOATING ACTION BUTTONS ===== */
+    .fab-container {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 999;
+    }
+
+    .fab {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: var(--color-white);
+      transition: all 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border: none;
+      cursor: pointer;
+    }
+
+    .fab-phone {
+      background: var(--color-primary);
+    }
+
+    .fab-phone:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 82, 204, 0.4);
+    }
+
+    .fab-whatsapp {
+      background: #25D366;
+    }
+
+    .fab-whatsapp:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--color-text-dark);
+      color: #F1F5F9;
+      padding: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav {
+        padding: 1rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .hero {
+        margin-top: 100px;
+        padding: 3rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .highlights {
+        margin: -2rem 1rem 2rem;
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .section {
+        padding: 0 1rem;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .features-grid,
+      .modules-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pricing-section {
+        padding: 2rem 1rem;
+      }
+
+      .price-card.featured {
+        transform: scale(1);
+      }
+
+      .cta {
+        padding: 2rem 1rem;
+      }
+
+      .cta h2 {
+        font-size: 1.75rem;
+      }
+
+      .fab-container {
+        bottom: 1rem;
+        right: 1rem;
+        flex-direction: row;
+        gap: 0.75rem;
+      }
+
+      .fab {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+      }
+
+      footer {
+        padding: 2rem 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        padding: 0.75rem;
+      }
+
+      .hero {
+        margin-top: 120px;
+        padding: 2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .highlights {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+
+      .fab {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="education-hub.html" class="nav-back"><i class="fas fa-arrow-left"></i> Back to Hub</a>
+    <div class="nav-logo"><i class="fas fa-microphone"></i> IELTS Course</div>
+    <a href="tel:+977015452444" class="nav-cta"><i class="fas fa-headset"></i> Enroll Now</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Master IELTS with Confidence</h1>
+      <p>Comprehensive IELTS preparation with expert instructors, unlimited mock tests, personalized feedback, and proven score improvement strategies. Join 1000+ successful students.</p>
+      <a href="#enroll" class="btn-primary"><i class="fas fa-pencil-alt"></i> Enroll in Course</a>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <div class="highlight-card">
+      <div class="highlight-number">8.5+</div>
+      <div class="highlight-label">Average Band Score Achieved</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-number">1000+</div>
+      <div class="highlight-label">Students Trained</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-number">95%</div>
+      <div class="highlight-label">Target Score Success</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-number">30+</div>
+      <div class="highlight-label">Mock Tests Available</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Why Choose Our IELTS Course?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-chalkboard-user"></i></div>
+        <h3>Expert Instructors</h3>
+        <p>Native English speakers with 10+ years of IELTS training experience. All instructors are certified IELTS examiners.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-book"></i></div>
+        <h3>Comprehensive Curriculum</h3>
+        <p>Covers all four skills: Listening, Reading, Writing, Speaking. Focus on weak areas with personalized study plans.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-laptop"></i></div>
+        <h3>Unlimited Mock Tests</h3>
+        <p>Practice with 30+ full-length mock tests simulating actual IELTS exam conditions. Timed and untimed practice options.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-comments"></i></div>
+        <h3>Speaking Practice Sessions</h3>
+        <p>One-on-one speaking sessions with native speakers. Receive instant feedback on pronunciation, fluency, and accuracy.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Progress Tracking</h3>
+        <p>Real-time performance analytics. Track improvement across all sections with detailed score reports after each test.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Guaranteed Results</h3>
+        <p>95% of students achieve their target band scores. If not satisfied, get free additional classes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Course Modules</h2>
+    <div class="modules-grid">
+      <div class="module-card">
+        <div class="module-header">
+          <h3><i class="fas fa-ear"></i> Listening</h3>
+        </div>
+        <div class="module-content">
+          <ul>
+            <li><i class="fas fa-check"></i> Accent familiarization</li>
+            <li><i class="fas fa-check"></i> Active listening strategies</li>
+            <li><i class="fas fa-check"></i> Note-taking techniques</li>
+            <li><i class="fas fa-check"></i> 50+ practice tests</li>
+            <li><i class="fas fa-check"></i> Transcript analysis</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="module-header">
+          <h3><i class="fas fa-book-open"></i> Reading</h3>
+        </div>
+        <div class="module-content">
+          <ul>
+            <li><i class="fas fa-check"></i> Speed reading techniques</li>
+            <li><i class="fas fa-check"></i> Vocabulary building (5000+)</li>
+            <li><i class="fas fa-check"></i> Question type strategies</li>
+            <li><i class="fas fa-check"></i> 50+ practice tests</li>
+            <li><i class="fas fa-check"></i> Academic text practice</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="module-header">
+          <h3><i class="fas fa-pen"></i> Writing</h3>
+        </div>
+        <div class="module-content">
+          <ul>
+            <li><i class="fas fa-check"></i> Task 1: Letter writing</li>
+            <li><i class="fas fa-check"></i> Task 2: Essay structure</li>
+            <li><i class="fas fa-check"></i> Grammar & punctuation</li>
+            <li><i class="fas fa-check"></i> Unlimited essay corrections</li>
+            <li><i class="fas fa-check"></i> Band 8+ writing samples</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="module-header">
+          <h3><i class="fas fa-microphone"></i> Speaking</h3>
+        </div>
+        <div class="module-content">
+          <ul>
+            <li><i class="fas fa-check"></i> Interview techniques</li>
+            <li><i class="fas fa-check"></i> Fluency & coherence</li>
+            <li><i class="fas fa-check"></i> Pronunciation coaching</li>
+            <li><i class="fas fa-check"></i> One-on-one sessions</li>
+            <li><i class="fas fa-check"></i> Confidence building</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="pricing-section">
+      <h2 class="section-title">Flexible Course Packages</h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-title">Starter</div>
+          <div class="price-amount">₹8,999</div>
+          <div class="price-details">1 Month / 20 Hours</div>
+          <ul class="price-features">
+            <li><i class="fas fa-check"></i> 10 Mock Tests</li>
+            <li><i class="fas fa-check"></i> Video Lessons</li>
+            <li><i class="fas fa-check"></i> Practice Materials</li>
+            <li><i class="fas fa-check"></i> Email Support</li>
+          </ul>
+          <button class="price-cta">Enroll Now</button>
+        </div>
+
+        <div class="price-card featured">
+          <div class="price-title">Standard (Popular)</div>
+          <div class="price-amount">₹15,999</div>
+          <div class="price-details">2 Months / 40 Hours</div>
+          <ul class="price-features">
+            <li><i class="fas fa-check"></i> 30 Mock Tests</li>
+            <li><i class="fas fa-check"></i> 4 Speaking Sessions</li>
+            <li><i class="fas fa-check"></i> Essay Corrections</li>
+            <li><i class="fas fa-check"></i> Progress Reports</li>
+            <li><i class="fas fa-check"></i> 24/7 Support</li>
+          </ul>
+          <button class="price-cta">Enroll Now</button>
+        </div>
+
+        <div class="price-card">
+          <div class="price-title">Premium</div>
+          <div class="price-amount">₹25,999</div>
+          <div class="price-details">3 Months / 60 Hours</div>
+          <ul class="price-features">
+            <li><i class="fas fa-check"></i> Unlimited Mock Tests</li>
+            <li><i class="fas fa-check"></i> 12 Speaking Sessions</li>
+            <li><i class="fas fa-check"></i> Unlimited Corrections</li>
+            <li><i class="fas fa-check"></i> Band Score Guarantee</li>
+            <li><i class="fas fa-check"></i> Lifetime Access</li>
+          </ul>
+          <button class="price-cta">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="enroll">
+    <h2>Ready to Achieve Your Target IELTS Score?</h2>
+    <p>Start your IELTS journey today with our expert-led course. Join thousands of successful students who achieved their desired band scores.</p>
+    <div class="cta-buttons">
+      <a href="tel:+977015452444" class="cta-btn"><i class="fas fa-phone"></i> Call Us</a>
+      <a href="https://wa.me/977015452444" class="cta-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </section>
+
+  <div class="fab-container">
+    <a href="tel:+977015452444" class="fab fab-phone" title="Call Rinova"><i class="fas fa-phone"></i></a>
+    <a href="https://wa.me/977015452444" class="fab fab-whatsapp" title="WhatsApp Rinova"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Rinova Education. All rights reserved.</p>
+    <p>
+      <a href="mailto:support@rinovaedu.com">support@rinovaedu.com</a> |
+      <a href="tel:+977015452444">+977-01-5452444</a> |
+      Yala Sadak, Kumaripati, Lalitpur, Nepal
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeScrollAnimations();
+      initializeNavigation();
+    });
+  </script>
+
+</body>
+</html>

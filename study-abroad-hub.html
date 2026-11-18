@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Abroad in 7+ Countries - USA, UK, Canada, Japan, Korea, India | Rinova Education</title>
+  <meta name="description" content="Explore study abroad opportunities in 7+ countries. Expert guidance for university selection, visa support, scholarships, and international admissions. Compare USA, UK, Canada, Japan, Korea, and India.">
+  <meta property="og:title" content="Study Abroad Hub - 7+ Countries, Universities & Visa Guidance">
+  <meta property="og:description" content="Complete guide to studying abroad with expert counselling for 7+ destinations including USA, UK, Canada, Japan, Korea, and India.">
+  <meta property="og:image" content="images/study-abroad.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Study Abroad Hub - 7+ Countries & Universities">
+  <meta name="twitter:description" content="Explore study abroad opportunities in USA, UK, Canada, Japan, Korea, India and more with expert guidance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    :root {
+      --color-primary: #0052CC;
+      --color-accent: #06B6D4;
+      --color-light: #E0F2FE;
+      --color-text-dark: #0F172A;
+      --color-text-light: #475569;
+      --color-white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--color-text-dark);
+      background: var(--color-white);
+      line-height: 1.6;
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .nav-logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-back {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-back:hover {
+      transform: translateX(-4px);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 0.6rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 82, 204, 0.3);
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      margin-top: 80px;
+      padding: 6rem 3rem;
+      background: linear-gradient(135deg, var(--color-light) 0%, #F0F9FF 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(0, 82, 204, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.25rem, 8vw, 4rem);
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--color-text-light);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-weight: 500;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 1rem 2rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(0, 82, 204, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(0, 82, 204, 0.4);
+    }
+
+    /* ===== DESTINATIONS GRID ===== */
+    .destinations {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 3rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      margin-bottom: 3rem;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--color-text-light);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-weight: 500;
+    }
+
+    .destinations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .destination-card {
+      background: var(--color-white);
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s;
+      border-top: 4px solid var(--color-primary);
+      cursor: pointer;
+    }
+
+    .destination-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 25px 50px rgba(0, 82, 204, 0.2);
+    }
+
+    .destination-header {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .destination-flag {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .destination-name {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .destination-body {
+      padding: 0 2rem 2rem;
+    }
+
+    .destination-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--color-text-light);
+    }
+
+    .highlight i {
+      color: var(--color-primary);
+      margin-top: 0.25rem;
+      flex-shrink: 0;
+    }
+
+    .destination-footer {
+      padding: 2rem;
+      border-top: 1px solid #E2E8F0;
+    }
+
+    .destination-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.3s;
+    }
+
+    .destination-link:hover {
+      transform: translateX(4px);
+    }
+
+    /* ===== COMPARISON SECTION ===== */
+    .comparison {
+      max-width: 1200px;
+      margin: 5rem auto;
+      padding: 0 3rem;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .comparison-table thead {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 1.25rem;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    .comparison-table th {
+      font-weight: 700;
+    }
+
+    .comparison-table tbody tr {
+      border-bottom: 1px solid #E2E8F0;
+      transition: all 0.3s;
+    }
+
+    .comparison-table tbody tr:hover {
+      background: #F8FAFC;
+    }
+
+    .comparison-table tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    /* ===== CTA SECTION ===== */
+    .cta {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-white);
+      padding: 4rem 3rem;
+      text-align: center;
+      margin: 5rem 0 0 0;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 900;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn-primary {
+      background: var(--color-white);
+      color: var(--color-primary);
+      padding: 1rem 2.5rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cta-btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .cta-btn-secondary {
+      background: transparent;
+      color: var(--color-white);
+      padding: 1rem 2.5rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: 2px solid var(--color-white);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cta-btn-secondary:hover {
+      background: var(--color-white);
+      color: var(--color-primary);
+      transform: translateY(-3px);
+    }
+
+    /* ===== FLOATING ACTION BUTTONS ===== */
+    .fab-container {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 999;
+    }
+
+    .fab {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: var(--color-white);
+      transition: all 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border: none;
+      cursor: pointer;
+    }
+
+    .fab-phone {
+      background: var(--color-primary);
+    }
+
+    .fab-phone:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 82, 204, 0.4);
+    }
+
+    .fab-whatsapp {
+      background: #25D366;
+    }
+
+    .fab-whatsapp:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--color-text-dark);
+      color: #F1F5F9;
+      padding: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== RESPONSIVE DESIGN ===== */
+    @media (max-width: 768px) {
+      nav {
+        padding: 1rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .nav-logo {
+        font-size: 1rem;
+      }
+
+      .nav-back {
+        font-size: 0.8rem;
+      }
+
+      .hero {
+        margin-top: 100px;
+        padding: 3rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .destinations-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        padding: 1rem;
+        font-size: 0.85rem;
+      }
+
+      .cta {
+        padding: 2rem 1rem;
+      }
+
+      .cta h2 {
+        font-size: 1.75rem;
+      }
+
+      .cta p {
+        font-size: 1rem;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .cta-btn-primary,
+      .cta-btn-secondary {
+        width: 100%;
+      }
+
+      .fab-container {
+        bottom: 1rem;
+        right: 1rem;
+        flex-direction: row;
+        gap: 0.75rem;
+      }
+
+      .fab {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+      }
+
+      footer {
+        padding: 2rem 1rem;
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        padding: 0.75rem;
+      }
+
+      .nav-logo {
+        font-size: 0.9rem;
+      }
+
+      .nav-back,
+      .nav-cta {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+      }
+
+      .hero {
+        margin-top: 120px;
+        padding: 2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .destinations-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .btn-primary {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+
+      .cta-btn-primary,
+      .cta-btn-secondary {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      .fab-container {
+        gap: 0.5rem;
+      }
+
+      .fab {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="education-hub.html" class="nav-back"><i class="fas fa-arrow-left"></i> Back to Hub</a>
+    <div class="nav-logo"><i class="fas fa-globe"></i> Study Abroad</div>
+    <a href="tel:+977015452444" class="nav-cta"><i class="fas fa-headset"></i> Get Counselling</a>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Study Abroad in 7+ Countries</h1>
+      <p>Explore world-class education opportunities across USA, UK, Canada, Japan, Korea, India and more. Expert guidance for university selection, visa support, scholarships, and international admissions.</p>
+      <div class="hero-cta">
+        <a href="#destinations" class="btn-primary"><i class="fas fa-globe"></i> Explore Destinations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DESTINATIONS SECTION ===== -->
+  <section class="destinations" id="destinations">
+    <h2 class="section-title">Study Abroad Destinations</h2>
+    <p class="section-subtitle">Each country offers unique opportunities, benefits, and pathways. Choose your destination and discover detailed information about universities, visa requirements, scholarships, and career prospects.</p>
+
+    <div class="destinations-grid">
+      <!-- USA -->
+      <div class="destination-card">
+        <div class="destination-header">
+          <div class="destination-flag">🇺🇸</div>
+          <div class="destination-name">United States</div>
+        </div>
+        <div class="destination-body">
+          <div class="destination-highlights">
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Top Universities:</strong> Harvard, Stanford, MIT, Yale</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>F-1 Visa:</strong> With OPT work authorization (12+ months)</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Scholarships:</strong> Merit-based aid widely available</span>
+            </div>
+          </div>
+        </div>
+        <div class="destination-footer">
+          <a href="study-usa.html" class="destination-link">Explore USA <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- UK -->
+      <div class="destination-card">
+        <div class="destination-header">
+          <div class="destination-flag">🇬🇧</div>
+          <div class="destination-name">United Kingdom</div>
+        </div>
+        <div class="destination-body">
+          <div class="destination-highlights">
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Top Universities:</strong> Oxford, Cambridge, UCL, Imperial</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Student Visa:</strong> 2-3 years post-study work visa</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Chevening:</strong> Prestigious government scholarships</span>
+            </div>
+          </div>
+        </div>
+        <div class="destination-footer">
+          <a href="study-uk.html" class="destination-link">Explore UK <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Canada -->
+      <div class="destination-card">
+        <div class="destination-header">
+          <div class="destination-flag">🇨🇦</div>
+          <div class="destination-name">Canada</div>
+        </div>
+        <div class="destination-body">
+          <div class="destination-highlights">
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Top Universities:</strong> Toronto, UBC, McGill, McMaster</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>PR Pathway:</strong> Path to permanent residency after graduation</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>PGWP:</strong> 3-year post-graduation work permit</span>
+            </div>
+          </div>
+        </div>
+        <div class="destination-footer">
+          <a href="study-canada.html" class="destination-link">Explore Canada <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Japan -->
+      <div class="destination-card">
+        <div class="destination-header">
+          <div class="destination-flag">🇯🇵</div>
+          <div class="destination-name">Japan</div>
+        </div>
+        <div class="destination-body">
+          <div class="destination-highlights">
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>MEXT Scholarship:</strong> Full coverage (tuition + living + airfare)</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Top Universities:</strong> Tokyo, Kyoto, Osaka, Tohoku</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Cultural Experience:</strong> Immerse in Japanese culture</span>
+            </div>
+          </div>
+        </div>
+        <div class="destination-footer">
+          <a href="study-japan.html" class="destination-link">Explore Japan <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- South Korea -->
+      <div class="destination-card">
+        <div class="destination-header">
+          <div class="destination-flag">🇰🇷</div>
+          <div class="destination-name">South Korea</div>
+        </div>
+        <div class="destination-body">
+          <div class="destination-highlights">
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>KGSP Scholarship:</strong> 100% tuition + living expenses</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Tech Innovation:</strong> Samsung, LG, Hyundai hubs</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Affordable:</strong> ₩15-20L annual tuition</span>
+            </div>
+          </div>
+        </div>
+        <div class="destination-footer">
+          <a href="study-korea.html" class="destination-link">Explore Korea <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- India -->
+      <div class="destination-card">
+        <div class="destination-header">
+          <div class="destination-flag">🇮🇳</div>
+          <div class="destination-name">India</div>
+        </div>
+        <div class="destination-body">
+          <div class="destination-highlights">
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Most Affordable:</strong> ₹3-8L annual tuition</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>IIT Excellence:</strong> World-class engineering institutions</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Cultural Proximity:</strong> Perfect for Nepalese students</span>
+            </div>
+          </div>
+        </div>
+        <div class="destination-footer">
+          <a href="study-india.html" class="destination-link">Explore India <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPARISON SECTION ===== -->
+  <section class="comparison">
+    <h2 class="section-title">Quick Comparison</h2>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Annual Tuition</th>
+          <th>Living Cost</th>
+          <th>Visa Type</th>
+          <th>Post-Study Work</th>
+          <th>Key Benefit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>USA</strong></td>
+          <td>$20,000-50,000</td>
+          <td>$15,000-20,000</td>
+          <td>F-1 Visa</td>
+          <td>OPT (12+ months)</td>
+          <td>Top Rankings & Scholarships</td>
+        </tr>
+        <tr>
+          <td><strong>UK</strong></td>
+          <td>£12,000-30,000</td>
+          <td>£12,000-15,000</td>
+          <td>Student Visa</td>
+          <td>2-3 Years PSW</td>
+          <td>Chevening Scholarships</td>
+        </tr>
+        <tr>
+          <td><strong>Canada</strong></td>
+          <td>CAD 20,000-35,000</td>
+          <td>CAD 15,000-18,000</td>
+          <td>Study Permit</td>
+          <td>PGWP (3 Years)</td>
+          <td>PR Pathway</td>
+        </tr>
+        <tr>
+          <td><strong>Japan</strong></td>
+          <td>¥600,000-1,200,000</td>
+          <td>¥800,000-1,200,000</td>
+          <td>Student Visa</td>
+          <td>Part-time work allowed</td>
+          <td>MEXT Full Scholarship</td>
+        </tr>
+        <tr>
+          <td><strong>Korea</strong></td>
+          <td>₩15-20L annually</td>
+          <td>₩10-15L annually</td>
+          <td>D-2 Visa</td>
+          <td>D-10 Job Seeker</td>
+          <td>KGSP 100% Scholarship</td>
+        </tr>
+        <tr>
+          <td><strong>India</strong></td>
+          <td>₹3-8L annually</td>
+          <td>₹5-8L annually</td>
+          <td>Student Visa</td>
+          <td>Limited work auth</td>
+          <td>Most Affordable + IITs</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta" id="contact">
+    <h2>Confused About Which Country? Let's Help!</h2>
+    <p>Our experienced counsellors will assess your profile, academic goals, budget, and preferences to recommend the perfect study destination for you. Get personalized guidance today.</p>
+    <div class="cta-buttons">
+      <a href="tel:+977015452444" class="cta-btn-primary"><i class="fas fa-phone"></i> Schedule Consultation</a>
+      <a href="https://wa.me/977015452444" class="cta-btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </section>
+
+  <!-- ===== FLOATING ACTION BUTTONS ===== -->
+  <div class="fab-container">
+    <a href="tel:+977015452444" class="fab fab-phone" title="Call Rinova"><i class="fas fa-phone"></i></a>
+    <a href="https://wa.me/977015452444" class="fab fab-whatsapp" title="WhatsApp Rinova"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 Rinova Education. All rights reserved.</p>
+    <p>
+      <a href="mailto:support@rinovaedu.com">support@rinovaedu.com</a> |
+      <a href="tel:+977015452444">+977-01-5452444</a> |
+      Yala Sadak, Kumaripati, Lalitpur, Nepal
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeScrollAnimations();
+      initializeNavigation();
+    });
+  </script>
+
+</body>
+</html>
