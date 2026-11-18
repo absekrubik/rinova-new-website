@@ -2312,3 +2312,61 @@ img { max-width: 100%; display: block; }
     display: block;
   }
 }
+
+/* =========================================================
+   HEADER COMPACT FIX (two portals + Rinova Learn Sign In)
+   Desktop only. Mobile menu is unchanged.
+========================================================= */
+
+.nav-links a.nav-signin {
+  color: var(--blue);
+}
+
+@media (min-width: 1025px) {
+  .logo img { width: 135px; }
+
+  .nav-links { gap: 16px; }
+
+  .nav-links a {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .nav-links li a.active {
+    padding: 8px 12px;
+  }
+
+  .nav-links a.nav-signin {
+    border: 2px solid var(--blue);
+    border-radius: 999px;
+    padding: 7px 14px;
+  }
+
+  .nav-links a.nav-signin:hover {
+    background: var(--blue);
+    color: var(--white);
+  }
+
+  .nav-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1250px) {
+  .logo img { width: 120px; }
+
+  .nav-links { gap: 10px; }
+
+  .nav-links a { font-size: 13px; }
+
+  .nav-links li a.active { padding: 7px 10px; }
+
+  .nav-links a.nav-signin { padding: 6px 10px; }
+
+  .nav-btn {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
